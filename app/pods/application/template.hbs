@@ -1,11 +1,21 @@
 <div class='flex h-screen'>
-  <div class='bg-purple-dark text-white w-16 p-4 flex justify-center'>
-    W
+  <div class='bg-purple-dark text-white p-4 flex flex-col'>
+    {{#each model as |workspace|}}
+      <div class='my-2'>
+        {{#link-to 'workspace' workspace.id
+          class='no-underline opacity-50 block relative group'
+          activeClass='opacity-100'}}
+          <img src={{workspace.iconUrl}}
+            class='w-10 h-10 mb-1 bg-white rounded-lg z-10 relative shadow-md'>
+          <span class='block text-center text-xs font-bold text-purple-light'>
+            ⌘{{workspace.position}}
+          </span>
+          <div class='absolute pin-t w-10 h-10 bg-purple-light
+          rounded-lg scale-none group-hover:scale-20 transition'></div>
+        {{/link-to}}
+      </div>
+    {{/each}}
   </div>
-  <div class='bg-purple text-white p-4 w-48'>
-    Channels
-  </div>
-  <div class='flex-grow p-4'>
-    Messages
-  </div>
+
+  {{outlet}}
 </div>
