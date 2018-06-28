@@ -2,17 +2,33 @@
   <div class='bg-purple-dark text-white p-4 flex flex-col'>
     {{#each model as |workspace|}}
       <div class='my-2'>
-        {{#link-to 'workspace' workspace.id
-          class='no-underline opacity-50 block relative group'
-          activeClass='opacity-100'}}
-          <img src={{workspace.iconUrl}}
-            class='w-10 h-10 mb-1 bg-white rounded-lg z-10 relative shadow-md'>
-          <span class='block text-center text-xs font-bold text-purple-light'>
-            ⌘{{workspace.position}}
-          </span>
-          <div class='absolute pin-t w-10 h-10 bg-purple-light
-          rounded-lg scale-none group-hover:scale-20 transition'></div>
-        {{/link-to}}
+
+        {{#ui-link-to 'workspace' workspace.id as |link|}}
+          <a {{action link.transitionTo}} href={{link.href}}
+            class='no-underline block relative group
+            {{if link.isActive "opacity-100" "opacity-50"}}'
+          >
+            {{!-- Icon + label --}}
+            <img src={{workspace.iconUrl}}
+              class='w-10 h-10 mb-1 bg-white rounded-lg z-10 relative shadow-md'>
+            <span class='block text-center text-xs font-bold text-purple-light'>
+              ⌘{{workspace.position}}
+            </span>
+
+            {{!-- Hover shadow --}}
+            <div class='
+              absolute pin-t w-10 h-10 bg-purple-light
+              rounded-lg scale-none group-hover:scale-20 transition
+            '></div>
+
+            {{!-- Active selector --}}
+            <div class='
+              absolute pin-t w-10 bg-purple-light rounded -ml-13 transition
+              {{if link.isActive 'opacity-100 h-10 mt-0' 'opacity-0 h-0 mt-5'}}
+            '></div>
+          </a>
+        {{/ui-link-to}}
+
       </div>
     {{/each}}
   </div>
