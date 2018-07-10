@@ -7,7 +7,7 @@ export default function(server) {
     position: 1
   });
   server.create('workspace', {
-    name: 'Ember JS Community',
+    name: 'EmberJS Community',
     slug: 'emberjs-community',
     iconUrl: '/images/emberjs-community.jpg',
     position: 2
