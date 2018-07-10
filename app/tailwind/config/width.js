@@ -1,21 +1,21 @@
 /*
-|-----------------------------------------------------------------------------
-| Width                                    https://tailwindcss.com/docs/width
-|-----------------------------------------------------------------------------
-|
-| Here is where you define your width utility sizes. These can be
-| percentage based, pixels, rems, or any other units. By default
-| we provide a sensible rem based numeric scale, a percentage
-| based fraction scale, plus some other common use-cases. You
-| can, of course, modify these values as needed.
-|
-|
-| It's also worth mentioning that Tailwind automatically escapes
-| invalid CSS class name characters, which allows you to have
-| awesome classes like .w-2/3.
-|
-| Class name: .w-{size}
-|
+|:------------------------------------------------------------------------------|
+| Width                                    https://tailwindcss.com/docs/width   |
+| ----------------------------------------------------------------------------- |
+|                                                                               |
+| Here is where you define your width utility sizes. These can be               |
+| percentage based, pixels, rems, or any other units. By default                |
+| we provide a sensible rem based numeric scale, a percentage                   |
+| based fraction scale, plus some other common use-cases. You                   |
+| can, of course, modify these values as needed.                                |
+|                                                                               |
+|                                                                               |
+| It's also worth mentioning that Tailwind automatically escapes                |
+| invalid CSS class name characters, which allows you to have                   |
+| awesome classes like .w-2/3.                                                  |
+|                                                                               |
+| Class name: .w-{size}                                                         |
+|                                                                               |
 */
 
 export default {
@@ -33,6 +33,7 @@ export default {
   '24': '6rem',
   '32': '8rem',
   '48': '12rem',
+  '56': '14rem',
   '64': '16rem',
   '1/2': '50%',
   '1/3': '33.33333%',
