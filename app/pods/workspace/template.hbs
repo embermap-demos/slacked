@@ -1,10 +1,17 @@
-<div class='bg-purple text-white p-4 w-56'>
-  <div class="flex">
-    <div class="text-lg font-black truncate">
-      {{model.name}}
+<div class='bg-purple text-white w-56'>
+  <a href="" class='p-4 text-white block no-underline hover:bg-purple-dark group'>
+    <div class="flex items-center">
+      <div class="text-lg font-black truncate">
+        {{model.name}}
+      </div>
+      <div class='px-1 text-purple-light group-hover:text-white'>
+        {{svg-jar 'arrow-down' class='stroke-current w-3 h-3'}}
+      </div>
+      <div class='ml-auto flex text-purple-light hover:text-white'>
+        {{svg-jar 'bell' class='stroke-current w-6 h-6'}}
+      </div>
     </div>
-    <div class="w-12"></div>
-  </div>
+  </a>
 </div>
 <div class='flex-grow p-4'>
   Messages
