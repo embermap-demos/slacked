@@ -30,5 +30,7 @@ export default {
   'purple-light': '#9e949e',
   'purple': '#4D394B',
   'purple-dark': '#3e313e',
-  'purple-darker': '#271D26'
+  'purple-darker': '#271D26',
+
+  'green': '#54928C'
 };

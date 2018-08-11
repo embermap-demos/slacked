@@ -1,5 +1,8 @@
 <div class='bg-purple text-white w-56'>
-  <a href="" class='p-4 text-white block no-underline hover:bg-purple-dark group'>
+  <a {{action (mut isShowingMenu) true}} href=""
+    data-tether-id="menu"
+    class='pt-4 px-4 pb-2 text-white block no-underline hover:bg-purple-dark group'>
+
     <div class="flex items-center">
       <div class="text-lg font-black truncate">
         {{model.name}}
@@ -11,8 +14,31 @@
         {{svg-jar 'bell' class='stroke-current w-6 h-6'}}
       </div>
     </div>
+
+    <div class='text-sm pt-1 flex items-center text-purple-light group-hover:text-white'>
+      <div class='bg-green h-2 w-2 mr-2 rounded-full'></div>
+      samselikoff
+    </div>
   </a>
 </div>
+
 <div class='flex-grow p-4'>
   Messages
 </div>
+
+{{#if isShowingMenu}}
+  {{#modal-dialog animatable=true
+    onClose=(action (mut isShowingMenu) false)
+    clickOutsideToClose=true
+    tetherTarget='[data-tether-id="menu"]'
+    attachment='top left'
+    targetAttachment='bottom left'}}
+
+    <div class="ml-2 -mt-2">
+      <div class="bg-white shadow border p-4 rounded w-64">
+        Oh hai there!
+      </div>
+    </div>
+
+  {{/modal-dialog}}
+{{/if}}
