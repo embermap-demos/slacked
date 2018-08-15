@@ -7,11 +7,10 @@
  * Here's an example:
 **/
 
-/*
-.btn-blue {
- @apply .bg-blue .text-white .font-bold .py-2 .px-4 .rounded;
+.list-item {
+  @apply block text-sm px-6 py-2 no-underline text-black -mx-px;
 }
-.btn-blue:hover {
- @apply .bg-blue-dark;
+
+.list-item:hover {
+  @apply bg-blue text-white;
 }
-*/
