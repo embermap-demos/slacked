@@ -4,13 +4,15 @@ export default function(server) {
     name: 'EmberMap',
     slug: 'embermap',
     iconUrl: '/images/embermap.png',
-    position: 1
+    position: 1,
+    workspaceUrl: 'embermap.slack.com'
   });
   server.create('workspace', {
     name: 'EmberJS Community',
     slug: 'emberjs-community',
     iconUrl: '/images/emberjs-community.jpg',
-    position: 2
+    position: 2,
+    workspaceUrl: 'embercommunity.slack.com'
   });
 
 }
