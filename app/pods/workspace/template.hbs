@@ -35,8 +35,84 @@
     targetAttachment='bottom left'}}
 
     <div class="ml-2 -mt-2">
-      <div class="bg-white shadow border p-4 rounded w-64">
-        Oh hai there!
+      <div class="bg-white shadow border rounded w-76 pb-2">
+        <div class="pt-6 px-6 pb-2 flex">
+          <img class='w-10 h-10 rounded mr-3'
+            src="https://pbs.twimg.com/profile_images/854110705527787522/8teNpfCK_400x400.jpg" alt="">
+          <div>
+            <p class='text-lg font-black'>samselikoff</p>
+            <p class='text-sm text-grey-dark pt-1'>Sam Selikoff</p>
+          </div>
+        </div>
+
+        <ul class='list-reset'>
+          <li>
+            <a class='block text-sm px-6 py-2 no-underline text-black
+              hover:bg-blue hover:text-white -mx-px' href='#'>
+              Set a status
+            </a>
+          </li>
+          <li>
+            <a class='block text-sm px-6 py-2 no-underline text-black
+              hover:bg-blue hover:text-white -mx-px' href='#'>
+              Profile & account
+            </a>
+          </li>
+          <li>
+            <a class='block text-sm px-6 py-2 no-underline text-black
+              hover:bg-blue hover:text-white -mx-px' href='#'>
+              Preferences
+            </a>
+          </li>
+          <li>
+            <a class='block text-sm px-6 py-2 no-underline text-black
+              hover:bg-blue hover:text-white -mx-px' href='#'>
+              Set yourself to <strong>away</strong>
+            </a>
+          </li>
+          <li>
+            <a class='block text-sm px-6 py-2 no-underline text-black
+              hover:bg-blue hover:text-white -mx-px' href='#'>
+              Help & feedback
+            </a>
+          </li>
+          <li>
+            <hr class='my-2 border-b'>
+          </li>
+        </ul>
+
+        <div class="pt-6 px-6 pb-2 flex">
+          <img class='w-10 h-10 rounded mr-3'
+            src={{model.iconUrl}} alt="">
+          <div>
+            <p class='text-lg font-black'>{{model.name}}</p>
+            <p class='text-sm text-grey-dark pt-1'>{{model.workspaceUrl}}</p>
+          </div>
+        </div>
+
+        <ul class='list-reset'>
+          <li>
+            <a class='block text-sm px-6 py-2 no-underline text-black
+              hover:bg-blue hover:text-white -mx-px' href='#'>
+              Analytics
+            </a>
+          </li>
+          <li>
+            <a class='block text-sm px-6 py-2 no-underline text-black
+              hover:bg-blue hover:text-white -mx-px' href='#'>
+              Sign out of <strong>{{model.name}}</strong>
+            </a>
+          </li>
+          <li>
+            <hr class='my-2 border-b'>
+          </li>
+          <li>
+            <a class='block text-sm px-6 py-2 no-underline text-black
+              hover:bg-blue hover:text-white -mx-px' href='#'>
+              Sign in to another workspace...
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
 

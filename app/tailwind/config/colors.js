@@ -32,5 +32,6 @@ export default {
   'purple-dark': '#3e313e',
   'purple-darker': '#271D26',
 
-  'green': '#54928C'
+  'green': '#54928C',
+  'blue': '#519CDA'
 };
