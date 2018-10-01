@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/hash</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons/hash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(13.000000, 9.000000)" fill-rule="nonzero" stroke="#333333" stroke-width="3">
+            <path d="M37.1956522,16.6666667 L1.80434783,16.6666667" id="Path-3-Copy-2"></path>
+            <path d="M36.0048853,31.6666667 L0.613580908,31.6666667" id="Path-3-Copy-3"></path>
+            <path d="M32.1666667,0.790322581 L23,47.4193548" id="Path-3-Copy"></path>
+            <path d="M16.1666667,0.790322581 L7,47.4193548" id="Path-3-Copy-4"></path>
+        </g>
+    </g>
+</svg>

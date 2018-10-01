@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icons/threads</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons/threads" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(7.000000, 9.000000)" fill-rule="nonzero" stroke="#333333">
+            <path d="M25.3439457,48.6009228 C29.1221364,48.6009228 32.7072315,47.8841982 35.9281929,46.5681553 C38.5404849,45.5008067 48.6458733,50.394063 50.6878915,48.6009228 C52.4368308,47.0651414 46.2105302,38.9313126 47.4168875,36.9484203 C49.4992732,33.5255981 50.6878915,29.4952765 50.6878915,25.0598508 C50.6878915,11.3556987 39.3410205,0 25.3439457,0 C11.346871,0 0,11.3556987 0,25.0598508 C0,38.7640029 11.346871,48.6009228 25.3439457,48.6009228 Z" id="Oval" stroke-width="5"></path>
+            <rect id="Rectangle" stroke-width="3" x="13.5" y="17.5" width="22" height="2"></rect>
+            <rect id="Rectangle-Copy" stroke-width="3" x="13.5" y="29.5" width="17" height="2"></rect>
+        </g>
+    </g>
+</svg>
