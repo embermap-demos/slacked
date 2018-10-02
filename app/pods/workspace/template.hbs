@@ -20,10 +20,105 @@
       samselikoff
     </div>
   </a>
+
+  <ul class='list-reset mt-4'>
+    <li>
+      {{#ui-link-to 'workspace.threads' as |link|}}
+        <a {{action link.transitionTo}}
+          href={{link.href}}
+          class='
+            flex items-center no-underline
+            px-4 py-1
+            {{if link.isActive
+              "bg-green text-white"
+              "hover:bg-purple-dark text-purple-lighter"
+            }}'
+        >
+          {{svg-jar 'threads' class='stroke-current w-4 h-4 mr-1'}}
+          All Threads
+        </a>
+      {{/ui-link-to}}
+    </li>
+  </ul>
+
+  <p class='mt-4 px-4'>
+    Channels
+  </p>
+
+  <ul class='list-reset mt-1'>
+    <li>
+      {{#ui-link-to 'workspace.channel' 1 as |link|}}
+        <a {{action link.transitionTo}}
+          href={{link.href}}
+          class='
+            flex items-center no-underline
+            px-4 py-1
+            {{if link.isActive
+              "bg-green text-white"
+              "hover:bg-purple-dark text-purple-lighter"
+            }}'
+        >
+          {{svg-jar 'hash' class='stroke-current w-4 h-4 mr-1'}}
+          general
+        </a>
+      {{/ui-link-to}}
+    </li>
+    <li>
+      {{#ui-link-to 'workspace.channel' 2 as |link|}}
+        <a {{action link.transitionTo}}
+          href={{link.href}}
+          class='
+            flex items-center no-underline
+            px-4 py-1
+            {{if link.isActive
+              "bg-green text-white"
+              "hover:bg-purple-dark text-purple-lighter"
+            }}'
+        >
+          {{svg-jar 'hash' class='stroke-current w-4 h-4 mr-1'}}
+          github
+        </a>
+      {{/ui-link-to}}
+    </li>
+    <li>
+      {{#ui-link-to 'workspace.channel' 3 as |link|}}
+        <a {{action link.transitionTo}}
+          href={{link.href}}
+          class='
+            flex items-center no-underline
+            px-4 py-1
+            {{if link.isActive
+              "bg-green text-white"
+              "hover:bg-purple-dark text-purple-lighter"
+            }}'
+        >
+          {{svg-jar 'hash' class='stroke-current w-4 h-4 mr-1'}}
+          questions
+        </a>
+      {{/ui-link-to}}
+    </li>
+    <li>
+      {{#ui-link-to 'workspace.channel' 4 as |link|}}
+        <a {{action link.transitionTo}}
+          href={{link.href}}
+          class='
+            flex items-center no-underline
+            px-4 py-1
+            {{if link.isActive
+              "bg-green text-white"
+              "hover:bg-purple-dark text-purple-lighter"
+            }}'
+        >
+          {{svg-jar 'hash' class='stroke-current w-4 h-4 mr-1'}}
+          show-and-tell
+        </a>
+      {{/ui-link-to}}
+    </li>
+  </ul>
 </div>
 
 <div class='flex-grow p-4'>
-  Messages
+  {{outlet}}
 </div>
 
 {{#if isShowingMenu}}

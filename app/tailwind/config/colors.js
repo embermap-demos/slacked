@@ -27,6 +27,7 @@ export default {
   'grey-lightest': '#f8fafc',
   white: '#ffffff',
 
+  'purple-lighter': '#C9C4C9',
   'purple-light': '#9e949e',
   'purple': '#4D394B',
   'purple-dark': '#3e313e',

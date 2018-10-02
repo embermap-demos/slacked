@@ -7,7 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('workspace', { path: '/:workspace_id' });
+  this.route('workspace', { path: '/:workspace_id' }, function() {
+    this.route('threads');
+    this.route('channel', { path: 'channels/:channel_id' });
+  });
 });
 
 export default Router;
