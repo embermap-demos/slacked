@@ -1,1 +1,36 @@
 <h2>Channel {{model}}</h2>
+
+<div class="mt-2">
+  <a {{action (mut isShowingMenu) true}}
+    href="#"
+    class='text-grey-darker text-xs no-underline p-1 border
+      border-transparent hover:border-grey-light rounded'
+    data-tether-id="channel-topic"
+  >
+    Welcome to channel {{model}}!
+  </a>
+</div>
+
+{{#if isShowingMenu}}
+
+  {{#modal-dialog animatable=true
+    onClose=(action (mut isShowingMenu) false)
+    clickOutsideToClose=true
+    tetherTarget='[data-tether-id="channel-topic"]'
+    attachment='top left'
+    targetAttachment='top left'
+    overlayClass='bg-semi-transparent'}}
+
+    <div class="mt-4">
+      <div class="bg-white px-6 py-5 rounded">
+        <textarea class='border border-grey-dark rounded p-2'
+          placeholder="Add a topic"
+          cols="45"
+          rows="5" />
+        <p class='mt-2 text-grey-darker text-xs'>250 character max.</p>
+      </div>
+    </div>
+
+  {{/modal-dialog}}
+
+{{/if}}

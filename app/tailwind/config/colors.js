@@ -27,12 +27,15 @@ export default {
   'grey-lightest': '#f8fafc',
   white: '#ffffff',
 
+  'semi-transparent': 'rgba(0, 0, 0, 0.5)',
+
   'purple-lighter': '#C9C4C9',
   'purple-light': '#9e949e',
   'purple': '#4D394B',
   'purple-dark': '#3e313e',
   'purple-darker': '#271D26',
 
-  'green': '#54928C',
+  'green-pale': '#54928C',
+  'green': '#3B8757',
   'blue': '#519CDA'
 };
