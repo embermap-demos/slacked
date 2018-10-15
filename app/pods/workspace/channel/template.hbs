@@ -11,7 +11,8 @@
   </a>
 </div>
 
-{{#if isShowingMenu}}
+{{!-- {{#if isShowingMenu}} --}}
+{{#if true}}
 
   {{#modal-dialog animatable=true
     onClose=(action (mut isShowingMenu) false)
@@ -27,7 +28,30 @@
           placeholder="Add a topic"
           cols="45"
           rows="5" />
+
         <p class='mt-2 text-grey-darker text-xs'>250 character max.</p>
+
+        <div class='mt-4 text-right'>
+          {{#ui-button}}
+            Cancel
+          {{/ui-button}}
+          <span class="pl-2">
+            {{#ui-button style='regular green'}}
+              Set Topic
+            {{/ui-button}}
+          </span>
+        </div>
+
+        <div class="mt-4 text-right">
+          {{#ui-button style='small'}}
+            Cancel
+          {{/ui-button}}
+          <span class="pl-2">
+            {{#ui-button style='small green'}}
+              Set Topic
+            {{/ui-button}}
+          </span>
+        </div>
       </div>
     </div>
 

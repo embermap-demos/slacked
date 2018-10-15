@@ -1,0 +1,24 @@
+<button class={{concat
+  'border rounded font-bold hover:shadow '
+
+  (if (contains 'white' (w style)) 'bg-white text-black border-grey ')
+  (if (contains 'green' (w style)) 'bg-green text-white border-transparent ')
+
+  (if (contains 'small' (w style)) 'px-2 py-1 text-xs ')
+  (if (contains 'regular' (w style)) 'px-3 py-2 ')
+  (if (contains 'large' (w style)) 'p-4')
+}}>
+  {{yield}}
+</button>
+
+{{!-- <button class={{concat
+  'border rounded font-bold hover:shadow '
+
+  (if (eq color 'white') 'bg-white text-black border-grey ')
+  (if (eq color 'green') 'bg-green text-white border-transparent ')
+
+  (if (eq size 'small') 'px-2 py-1 text-xs ')
+  (if (eq size 'regular') 'px-3 py-2 ')
+}}>
+  {{yield}}
+</button> --}}
